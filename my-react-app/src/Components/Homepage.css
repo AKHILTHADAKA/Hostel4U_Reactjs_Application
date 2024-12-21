@@ -1,0 +1,432 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner{
+margin-bottom: 20px;
+width: 100%;
+height: 100vh;
+/* background-image: url("https://i.postimg.cc/4xxDTPQd/aa.jpg "); */
+/* background-image: url("https://i.postimg.cc/cCqvprqx/23307267-hyberdad.jpg"); */
+background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  margin-top: 80px;
+
+
+}
+.hyd{
+  /* background-image: url("https://i.postimg.cc/pV4d19f3/6749356-3404532.jpg"); */
+  background-image: url("https://i.postimg.cc/Qd0Cmf0J/6587943-3365754.jpg");
+  height: 80vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+ 
+  margin-top: -10px;
+  
+  /* margin-bottom: -180px; */
+  
+}
+/* 
+.hyda{
+  background-image: url("");
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  
+} */
+/* Center the search bar and set its width to 60% */
+.search-container {
+  width: 60%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: #ffffff;
+
+}
+
+/* Style the input field */
+.search-input {
+  width: 85%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+/* Style the search button */
+.search-button {
+  width: 15%;
+  padding: 10px;
+  background-color: #665f5f;
+  color: #111;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+}
+
+
+/* Adjust for smaller screens */
+@media screen and (max-width: 768px) {
+  .search-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-container {
+    width: 95%;
+  }
+  
+  .search-input, .search-button {
+    font-size: 14px;
+  }
+}
+
+
+
+/* contact us */
+.mycontact{
+  background-color: slateblue;
+
+}
+
+form{
+  padding: 100px;
+}
+h1, p{
+text-align: center;
+}
+label{
+display:block;
+margin:1em 0 .2em;
+}
+/* single-line text, checkbox, and button */
+input, select, textarea{
+display:block;
+width:100%;
+padding:.3em;
+font-size:20px;
+background-color:#fbfbfb;
+border:solid 1px #CCC;
+resize:vertical;
+}
+textarea{
+min-height:180px;
+}
+select{
+color:indigo;
+}
+option{
+color:blue;
+background: lavenderBlush;
+}
+input[type=checkbox]{
+display:inline;
+width:auto;
+color:red;
+}
+
+input[type=submit]{
+background:rgb(165, 7, 7);
+margin:1em 0 0;
+color:white;
+border:none;
+border-radius:8px;
+transition:all .3s ease-out;
+}
+
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+textarea:focus,
+textarea:hover{
+background: lavenderBlush;
+}
+
+/* hover and focus states */
+input[type=submit]:hover,
+input[type=submit]:focus{
+background: rgb(13, 76, 202);
+outline:none;
+}
+
+@media screen and (min-width:600px) {
+/*  make the form 2 columns */
+form:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.column{
+  width:50%;
+  padding:1em;
+  float:left;
+}
+}
+
+
+
+/* cards  */
+.cards {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for better contrast */
+ 
+}
+
+.card-location {
+  text-align: center;
+  
+  margin-bottom: 80px;
+}
+
+.card-text1 {
+
+  color: #333; /* Dark text color for visibility */
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 36px; /* Font size for the header */
+  color: #007bff; /* Header text color */
+  margin: 0;
+}
+
+.card-container {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+
+}
+
+
+.card img {
+  width: 240px;
+  height: 200px;
+  padding: 10px;
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+}
+
+.card-info {
+  padding: 10px;
+}
+
+.card-info h3 {
+  font-size: 18px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.learn-more1 {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-flex; /* Ensures the span and link align properly */
+  align-items: center;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.learn-more1:hover {
+  color: #dc3545; /* Change link color on hover */
+}
+
+.learn-more1 span {
+  margin-left: 8px; /* Space between text and arrow */
+  transition: transform 0.3s ease; /* Smooth transition for arrow movement */
+}
+
+.learn-more1:hover span {
+  transform: translateX(5px); /* Move arrow slightly to the right on hover */
+}
+
+
+.learn-more{
+margin-top: 40px;
+text-decoration: none;
+}
+
+
+.learn-more button {
+  width: 110px; /* Increased width */
+  height: 40px; /* Increased height */
+  background-color: #007bff; /* Primary color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 4px;
+  font-size: 18px; /* Increased font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.learn-more button:hover {
+  background-color: #dc3545; 
+  transform: scale(1.05); 
+}
+
+
+/* 
+ */
+
+
+ /* Container for the entire services section */
+.services-section {
+  padding: 40px; /* Add padding around the section */
+  background-color: #f0f4f8; /* Light background color for the section */
+}
+
+/* Header styling */
+.services-header {
+  text-align: center; /* Center the header text */
+  margin-bottom: 30px; /* Space below the header */
+}
+
+.services-header h1 {
+  font-size: 36px; /* Font size for the header */
+  color: #007bff; /* Header text color */
+  margin: 0; /* Remove default margin */
+}
+
+/* Content container for the service cards */
+.services-content {
+  display: flex; /* Align cards in a row */
+  justify-content: center; /* Center the cards */
+  gap: 20px; /* Space between cards */
+}
+
+/* Container for the service cards */
+.service-cards {
+  display: flex; /* Align cards in a row */
+  gap: 20px; /* Space between cards */
+}
+
+/* Individual service card styling */
+.service-card {
+  width: 200px; /* Fixed width for cards */
+  height: auto; /* Height adjusts based on content */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #fff; /* White background for the card */
+  display: flex; /* Center content inside the card */
+  flex-direction: column; /* Stack text and image vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  border: 2px solid #007bff; /* Blue border color */
+  padding: 20px; /* Padding inside the card */
+  text-align: center; /* Center text inside the card */
+}
+
+/* Styling for images inside the service card */
+.service-card img {
+  width: 100%; /* Ensure image takes full width of the card */
+  height: auto; /* Maintain image aspect ratio */
+  border-radius: 10px; /* Rounded corners for images */
+  margin-top: 10px; /* Space between text and image */
+}
+
+
+/* Footer */
+/* Footer Container */
+footer {
+  background-color: #222020;
+  color: #fff;
+  padding: 40px 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer Section */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1 1 1  200px;
+  min-width: 220px;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #f1f1f1;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #b1b1b1;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+/* Social Media Icons */
+.footer-section.social a {
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px;
+  color: #b1b1b1;
+  transition: color 0.3s ease;
+}
+
+.footer-section.social a:hover {
+  color: #fff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #b1b1b1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .footer-section h3 {
+    font-size: 18px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
